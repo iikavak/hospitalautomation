@@ -56,6 +56,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(356, 367);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // txtsifre
             // 
@@ -103,6 +104,7 @@
             this.btngucel.TabIndex = 19;
             this.btngucel.Text = "Güncelle";
             this.btngucel.UseVisualStyleBackColor = false;
+            this.btngucel.Click += new System.EventHandler(this.btngucel_Click);
             // 
             // label6
             // 
@@ -200,6 +202,7 @@
             this.btnsil.TabIndex = 27;
             this.btnsil.Text = "Sil";
             this.btnsil.UseVisualStyleBackColor = false;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
             // 
             // cmbbrans
             // 
@@ -233,6 +236,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "DoktorPaneli";
             this.Text = "DoktorPaneli";
+            this.Load += new System.EventHandler(this.DoktorPaneli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

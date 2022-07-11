@@ -81,5 +81,37 @@ namespace hospitalauto
             }
             bgl.baglanti().Close();  
         }
+
+        private void btndoktor_Click(object sender, EventArgs e)
+        {
+            DoktorPaneli dp = new DoktorPaneli();
+            dp.Show();
+        }
+
+        private void btnbrans_Click(object sender, EventArgs e)
+        {
+            BransDetay bd = new BransDetay();
+            bd.Show();
+        }
+
+        private void btnrandevul_Click(object sender, EventArgs e)
+        {
+            RandevuListele rl = new RandevuListele();
+            rl.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("insert into tblduyuru (duyuru) values(@d1)",bgl.baglanti());
+            komut.Parameters.AddWithValue("@d1",rtxtduy.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Duyuru Oluşturuldu");
+        }
     }
 }

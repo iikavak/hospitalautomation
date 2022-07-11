@@ -126,6 +126,7 @@
             this.btnguncel.TabIndex = 6;
             this.btnguncel.Text = "Güncelle";
             this.btnguncel.UseVisualStyleBackColor = false;
+            this.btnguncel.Click += new System.EventHandler(this.btnguncel_Click);
             // 
             // txtad
             // 

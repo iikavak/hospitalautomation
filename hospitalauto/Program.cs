@@ -16,7 +16,7 @@ namespace hospitalauto
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SekreterDetay());
+            Application.Run(new RandevuListele());
         }
     }
 }

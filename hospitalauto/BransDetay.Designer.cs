@@ -90,6 +90,7 @@
             this.btnsil.TabIndex = 4;
             this.btnsil.Text = "Sil";
             this.btnsil.UseVisualStyleBackColor = false;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
             // 
             // btnguncelle
             // 
@@ -102,6 +103,7 @@
             this.btnguncelle.TabIndex = 5;
             this.btnguncelle.Text = "Güncelle";
             this.btnguncelle.UseVisualStyleBackColor = false;
+            this.btnguncelle.Click += new System.EventHandler(this.btnguncelle_Click);
             // 
             // BransDetay
             // 
@@ -117,6 +119,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "BransDetay";
             this.Text = "BransDetay";
+            this.Load += new System.EventHandler(this.BransDetay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
